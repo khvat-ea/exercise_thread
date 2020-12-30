@@ -42,12 +42,14 @@ public class BadThreads {
  
     public static void main(String args[]) throws InterruptedException {
 
-        for (int i=0; i<10; i++) {
+        for (int i=0; i<5_000; i++) {
             CorrectorThread correctorThread = new CorrectorThread();
             message = "Казнить";
+//            Thread.sleep(10);
             correctorThread.start();
-            Thread.sleep(10);
-//            if (message.equalsIgnoreCase("Казнить"))
+            System.out.println(correctorThread.getName());
+//            Thread.sleep(1);
+            if (message.equalsIgnoreCase("Казнить"))
                 System.out.println(message);
         }
     }
