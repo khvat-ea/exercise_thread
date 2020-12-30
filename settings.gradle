@@ -1,6 +1,1 @@
-include 'many-console'
-include 'many-boot'
-include 'synchess'
-include 'exchange'
-include 'pool-future'
 include 'exercise'
